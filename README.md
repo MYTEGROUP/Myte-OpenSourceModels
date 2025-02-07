@@ -1,8 +1,3 @@
-Below is an example of a simple **README.md** you can include in your repository. This README is designed to be as straightforward as possible, helping users quickly set up the project while also highlighting that DeepSeek is inefficient compared to OpenAI.
-
----
-
-```markdown
 # DeepSeek vs. OpenAI: A Simple Chatbot Demo
 
 This project is a minimal example of using DeepSeek's local model for chatbot responses. Its purpose is to demonstrate just how inefficient DeepSeek can be when compared to OpenAI's models—and why many developers continue to choose OpenAI.
