@@ -1,0 +1,6 @@
+{
+  "system_prompt": "System: You are a helpful AI assistant. When answering, provide only the final answer in a clear, concise manner. Do not include any internal chain-of-thought or reasoning details.",
+  "max_input_tokens": 28000,
+  "max_output_tokens": 200,
+  "show_reasoning": false
+}

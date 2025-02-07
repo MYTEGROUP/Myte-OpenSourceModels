@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DeepSeek Settings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+  <h1>Settings</h1>
+  <form method="post" action="{{ url_for('settings') }}">
+    <div class="mb-3">
+      <label for="system_prompt" class="form-label">System Prompt</label>
+      <textarea class="form-control" id="system_prompt" name="system_prompt" rows="3" required>{{ settings.system_prompt }}</textarea>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="show_reasoning" name="show_reasoning" {% if settings.show_reasoning %}checked{% endif %}>
+      <label class="form-check-label" for="show_reasoning">
+        Show internal reasoning (chain-of-thought)
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Settings</button>
+    <a href="{{ url_for('chat') }}" class="btn btn-secondary">Back to Chat</a>
+  </form>
+</div>
+</body>
+</html>
